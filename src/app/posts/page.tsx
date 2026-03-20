@@ -1,4 +1,9 @@
+'use client'
+
+import { useState } from 'react'
+
 export default function Posts() {
+  const [state, setState] = useState([])
   return (
     <ul>
       <li>게시글 1</li>
