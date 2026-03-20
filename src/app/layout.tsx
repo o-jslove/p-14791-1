@@ -27,18 +27,20 @@ export default function RootLayout({
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <header>
-        <nav>
-          <a href="/" className="p-2 rounded hover:bg-gray-200">
-            메인
-          </a>
-          <a href="/posts" className="p-2 rounded hover:bg-gray-200">
-            글 목록
-          </a>
-        </nav>
-      </header>
-      <body className="p-2">{children}</body>
-      <footer className="p-2">푸터</footer>
+      <body className="p-2">
+        <header>
+          <nav>
+            <a href="/" className="p-2 rounded hover:bg-gray-200">
+              메인
+            </a>
+            <a href="/posts" className="p-2 rounded hover:bg-gray-200">
+              글 목록
+            </a>
+          </nav>
+        </header>
+        {children}
+        <footer className="p-2">푸터</footer>
+      </body>
     </html>
   )
 }
