@@ -29,7 +29,7 @@ export default function RootLayout({
     >
       <body className="p-2">
         <header>
-          <nav>
+          <nav className="flex">
             <a href="/" className="p-2 rounded hover:bg-gray-200">
               메인
             </a>
